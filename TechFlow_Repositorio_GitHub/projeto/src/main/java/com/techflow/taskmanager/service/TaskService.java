@@ -33,9 +33,11 @@ public class TaskService {
             throw new IllegalArgumentException("O título da tarefa não pode ser vazio.");
         }
 
-        // Validação do tamanho do título (máximo 100 caracteres)
-        if (title.trim().length() > 100) {
-            throw new IllegalArgumentException("O título não pode ter mais de 100 caracteres.");
+       // Validação de título duplicado
+for (Task existingTask : repository.findAll()) {
+    if (existingTask.getTitle().equalsIgnoreCase(title.trim())) {
+        throw new IllegalArgumentException("Já existe uma tarefa com o título: " + title.trim());
+            }
         }
 
         // Validação da prioridade
