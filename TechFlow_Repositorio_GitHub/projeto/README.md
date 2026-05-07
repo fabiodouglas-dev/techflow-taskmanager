@@ -1,4 +1,4 @@
-# 📋 TechFlow Task Manager
+#TechFlow Task Manager
 
 > Sistema de Gerenciamento de Tarefas Ágil — TechFlow Solutions  
 > Projeto Acadêmico · Engenharia de Software · UniFECAF
@@ -10,13 +10,13 @@
 
 ---
 
-## 🎯 Objetivo do Projeto
+##Objetivo do Projeto
 
 A **TechFlow Solutions** foi contratada por uma startup de logística para desenvolver um sistema de gerenciamento de tarefas baseado em metodologias ágeis. O sistema permite acompanhar o fluxo de trabalho em tempo real, priorizar tarefas críticas e monitorar o desempenho da equipe.
 
 ---
 
-## 📦 Escopo Inicial
+##Escopo Inicial
 
 O sistema contempla as seguintes funcionalidades principais:
 
@@ -32,7 +32,7 @@ O sistema contempla as seguintes funcionalidades principais:
 
 ---
 
-## 🏗️ Arquitetura do Sistema
+##Arquitetura do Sistema
 
 O projeto segue a arquitetura em três camadas (MVC simplificado):
 
@@ -59,7 +59,7 @@ docs/
 
 ---
 
-## ⚙️ Metodologia Ágil Adotada
+##Metodologia Ágil Adotada
 
 Este projeto utiliza uma abordagem **híbrida Kanban/Scrum**:
 
@@ -73,7 +73,7 @@ Este projeto utiliza uma abordagem **híbrida Kanban/Scrum**:
 
 ---
 
-## 🚀 Como Executar
+##Como Executar
 
 ### Pré-requisitos
 - Java 17+
@@ -104,7 +104,7 @@ java -jar target/techflow-taskmanager.jar
 
 ---
 
-## 🧪 Testes Automatizados
+##Testes Automatizados
 
 Os testes cobrem todas as operações CRUD e as regras de negócio:
 
@@ -123,7 +123,7 @@ Os testes cobrem todas as operações CRUD e as regras de negócio:
 
 ---
 
-## 🔄 Gestão de Mudanças — Alteração de Escopo
+##Gestão de Mudanças — Alteração de Escopo
 
 ### Mudança Registrada: Sprint 3
 
@@ -142,7 +142,7 @@ Os testes cobrem todas as operações CRUD e as regras de negócio:
 
 ---
 
-## 📊 GitHub Projects — Kanban
+##GitHub Projects — Kanban
 
 O quadro Kanban está disponível na aba **Projects** deste repositório.
 
@@ -153,16 +153,16 @@ Colunas organizadas:
 
 ---
 
-## 👥 Equipe
+##Equipe
 
 | Nome | Papel |
-|------|-------|
+|Fabio |Desenvolvedor|
 | Desenvolvedor | Arquitetura, Backend, Testes |
 | TechFlow Solutions | Cliente fictício |
 
 ---
 
-## 📚 Referências
+## Referências
 
 - Pressman, R. — *Engenharia de Software: Uma Abordagem Profissional*
 - [GitHub Docs — Actions](https://docs.github.com/en/actions)
