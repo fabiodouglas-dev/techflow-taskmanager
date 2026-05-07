@@ -74,9 +74,15 @@ public class Task {
     public LocalDateTime getCompletedAt() { return completedAt; }
     public void setCompletedAt(LocalDateTime completedAt) { this.completedAt = completedAt; }
 
-    @Override
-    public String toString() {
-        return "Task{id=" + id + ", title='" + title + "', status='" + status +
-               "', priority='" + priority + "', assignee='" + assignee + "'}";
+   @Override
+public String toString() {
+    return "========== TAREFA ==========\n" +
+           "ID:          " + id + "\n" +
+           "Título:      " + title + "\n" +
+           "Status:      " + status + "\n" +
+           "Prioridade:  " + priority + "\n" +
+           "Responsável: " + assignee + "\n" +
+           "Criado em:   " + createdAt + "\n" +
+           "============================";
     }
 }
