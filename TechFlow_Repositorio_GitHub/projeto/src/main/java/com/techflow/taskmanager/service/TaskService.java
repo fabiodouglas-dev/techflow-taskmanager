@@ -142,19 +142,19 @@ for (Task existingTask : repository.findAll()) {
         }
         repository.deleteById(id);
     }
-
-    /**
-     * Retorna estatísticas básicas do sistema.
-     */
-    public String getStats() {
-        int total = repository.count();
-        int todo = repository.findByStatus("TO_DO").size();
-        int inProgress = repository.findByStatus("IN_PROGRESS").size();
-        int done = repository.findByStatus("DONE").size();
-
-        return String.format(
-            "Total: %d | A Fazer: %d | Em Progresso: %d | Concluídas: %d",
-            total, todo, inProgress, done
-        );
+/**
+ * Busca tarefas pelo nome do responsável.
+ * A busca não diferencia maiúsculas de minúsculas.
+ */
+public List<Task> getTasksByAssignee(String assignee) {
+    if (assignee == null || assignee.trim().isEmpty()) {
+        throw new IllegalArgumentException("O nome do responsável não pode ser vazio.");
     }
+    List<Task> result = new ArrayList<>();
+    for (Task task : repository.findAll()) {
+        if (task.getAssignee().equalsIgnoreCase(assignee.trim())) {
+            result.add(task);
+        }
+    }
+    return result;
 }
