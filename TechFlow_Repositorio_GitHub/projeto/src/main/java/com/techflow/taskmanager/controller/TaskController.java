@@ -50,21 +50,22 @@ public class TaskController {
             }
         }
     }
-
-    /** Exibe o menu principal */
-    private void printMenu() {
-        System.out.println("\n--- MENU PRINCIPAL ---");
-        System.out.println("1. Criar nova tarefa");
-        System.out.println("2. Listar todas as tarefas");
-        System.out.println("3. Atualizar tarefa");
-        System.out.println("4. Atualizar status de tarefa");
-        System.out.println("5. Excluir tarefa");
-        System.out.println("6. Filtrar por status");
-        System.out.println("7. Estatísticas");
-        System.out.println("0. Sair");
-        System.out.print("\nEscolha uma opção: ");
-    }
-
+/** Exibe o menu principal */
+private void printMenu() {
+    System.out.println("\n╔══════════════════════════════╗");
+    System.out.println("║       MENU PRINCIPAL         ║");
+    System.out.println("╠══════════════════════════════╣");
+    System.out.println("║  1. Criar nova tarefa        ║");
+    System.out.println("║  2. Listar todas as tarefas  ║");
+    System.out.println("║  3. Atualizar tarefa         ║");
+    System.out.println("║  4. Atualizar status         ║");
+    System.out.println("║  5. Excluir tarefa           ║");
+    System.out.println("║  6. Filtrar por status       ║");
+    System.out.println("║  7. Estatísticas             ║");
+    System.out.println("║  0. Sair                     ║");
+    System.out.println("╚══════════════════════════════╝");
+    System.out.print("\nEscolha uma opção: ");
+}
     /** Fluxo de criação de tarefa */
     private void createTask() {
         System.out.println("\n--- CRIAR NOVA TAREFA ---");
