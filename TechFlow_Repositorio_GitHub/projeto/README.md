@@ -146,10 +146,12 @@ Os testes cobrem todas as operações CRUD e as regras de negócio:
 
 O quadro Kanban está disponível na aba **Projects** deste repositório.
 
-Colunas organizadas:
-- **To Do** — tarefas planejadas
-- **In Progress** — em desenvolvimento ativo
-- **Done** — concluídas e testadas
+🔗 [Acessar quadro Kanban](https://github.com/fabiodouglas-dev/techflow-taskmanager/projects)
+
+Organização atual das tarefas:
+- **To Do:** 3 tarefas planejadas
+- **In Progress:** 2 tarefas em andamento
+- **Done:** 7 tarefas concluídas
 
 ---
 
