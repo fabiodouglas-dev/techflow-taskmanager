@@ -125,7 +125,18 @@ Os testes cobrem todas as operações CRUD e as regras de negócio:
 
 ##Gestão de Mudanças — Alteração de Escopo
 
+> **Atualização registrada em:** Sprint 3 — Semana 3 do desenvolvimento
+
 ### Mudança Registrada: Sprint 3
+---
+
+## 📝 Registro de Mudanças (Changelog)
+
+| Versão | Data | Descrição |
+|--------|------|-----------|
+| 1.0.0 | Sprint 1 | Estrutura inicial do projeto e modelo Task |
+| 1.1.0 | Sprint 2 | CRUD completo, testes e pipeline CI/CD |
+| 1.2.0 | Sprint 3 | Mudança de escopo: notificações e exportação CSV |
 
 **Data:** Semana 3 do desenvolvimento  
 **Solicitante:** Cliente (Startup de Logística)
