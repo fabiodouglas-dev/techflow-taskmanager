@@ -81,13 +81,20 @@ public class TaskServiceTest {
 
     // ==================== TESTES DE LEITURA ====================
 
-    /** Teste: buscar tarefa existente por ID */
-    void testGetTaskById_ExistingTask() {
-        setUp();
-        Task created = service.createTask("Tarefa A", "desc", "LOW", "Pedro");
-        Task found = service.getTaskById(created.getId());
-        assertEquals(created.getId(), found.getId(), "testGetTaskById: IDs devem ser iguais");
-    }
+    /**
+ * Verifica se o sistema consegue recuperar corretamente
+ * uma tarefa existente a partir do seu ID único.
+ * Padrão: Arrange → Act → Assert
+ */
+void testGetTaskById_ExistingTask() {
+    setUp();
+    // Arrange: cria uma tarefa para ser buscada
+    Task created = service.createTask("Tarefa A", "desc", "LOW", "Pedro");
+    // Act: busca pelo ID gerado
+    Task found = service.getTaskById(created.getId());
+    // Assert: verifica se é a mesma tarefa
+    assertEquals(created.getId(), found.getId(), "testGetTaskById: IDs devem ser iguais");
+}
 
     /** Teste: buscar tarefa inexistente deve lançar exceção */
     void testGetTaskById_NonExisting_ThrowsException() {
