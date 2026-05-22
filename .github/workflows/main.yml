@@ -23,8 +23,8 @@ jobs:
 
       - name: Compilar o projeto
         run: mvn compile --no-transfer-progress
-        working-directory: projeto
+        working-directory: TechFlow_Repositorio_GitHub/projeto
 
       - name: Executar testes
         run: mvn test --no-transfer-progress
-        working-directory: projeto
+        working-directory: TechFlow_Repositorio_GitHub/projeto
